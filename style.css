@@ -1,0 +1,72 @@
+#Introduccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Source serif pro;
+    text-align: center;
+    font-size: 1em;
+}
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+    font-style: italic;
+}
+
+#Indice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indices{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #000000;
+}
+
+#Imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagengato{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+#Javascript{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 1.30em;
+    font-weight: bold;
+    color: #000000;
+}
+
+pre{
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace';
+}

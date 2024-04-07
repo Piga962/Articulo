@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Articulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="Introduccion">
+        <h1>Actividad 1</h1>
+        <p>En esta pagina se documentara todo los conceptos vistos en la clase de Construccion de software.</p>
+    </div>
+
+    <div id="Indice">
+        <h2>Indice</h2>
+        <ul class="indices">
+            <li><a href="#Introduccion">Introducción</a></li>
+            <li><a href="#Indice">Indice</a></li>
+            <li><a href="#Imagen">Imagen</a></li>
+
+            <li>
+                <a href="#Javascript">Javascript</a>
+                <ul>
+                    <li><a href="#Variables">Variables, Strings, Boolean</a></li>
+                    <li><a href="#Operadores-logicos">Operadores Logicos</a></li>
+                    <li><a href="#Funciones">Funciones</a></li>
+                    <li><a href="#Conclusiones">Conclusiones</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="Imagen">
+        <h2>Imagen</h2>
+        <p>En este apartado se muestra una imagen de un gato.</p>
+        <img src="gatoxd.jpeg" id="imagengato">
+    </div>
+
+    <div id="Javascript">
+        <h2>Javascript</h2>
+        <p>La programación en JavaScript, como en muchos otros lenguajes, se fundamenta en el uso de variables. Estas son esenciales para almacenar y manipular datos, permitiéndonos desarrollar aplicaciones dinámicas y flexibles. Las variables en JavaScript pueden contener distintos tipos de datos, como números, cadenas de texto y booleanos, y su comprensión adecuada es crucial para cualquier desarrollador.</p>
+        
+        <h3 id="Variables">Variables</h3>
+        <p>Var</p>
+        <p>Es la forma más antigua de declarar variables en JavaScript. Las variables declaradas con var tienen alcance de función (function scope), lo que significa que si se declaran dentro de una función, no pueden ser accesibles fuera de ella. Sin embargo, si se declaran fuera de cualquier función, tienen un alcance global. Además, sufren de un fenómeno llamado hoisting, donde las declaraciones de variables se mueven al inicio de la función o del script, pero no su inicialización.</p>
+        <p>Let</p>
+        <p>Introducido en ES6 (ECMAScript 2015), let permite declarar variables con alcance de bloque (block scope), es decir, la variable sólo es accesible dentro del bloque en el que se ha declarado, como bucles o condiciones.</p>
+        <p>Const</p>
+        <p>También introducido en ES6, const se usa para declarar constantes, lo que significa que una vez asignado un valor a la variable, no se puede reasignar. Al igual que let, tiene un alcance de bloque.</p>
+
+        <p>Todas estas declaraciones pueden utilizarse dentro de funciones. var tendrá un alcance de función, mientras que let y const tendrán un alcance de bloque.</p>
+        <pre>
+            <code>
+function testLet() {
+    let a = 30;
+    if (true) {
+        let a = 50;
+        console.log(a);
+    
+    console.log(a);
+}
+testLet();
+            </code> 
+        </pre>
+
+        <p>En bucles, let es especialmente útil ya que cada iteración del bucle puede tener su propio alcance.</p>
+        <pre>
+            <code>
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}</code>
+        </pre>
+
+        <h3 id="Operadores-logicos">Operadores Logicos</h3>
+        <p>El operador && representa el 'y' lógico. El operador || denota el 'o' lógico. El 'no' se escribe como un signo de exclamación '!'. El último operador lógico es el ternario.</p>
+        <p>Los operadores lógicos && y || manejan valores de diferentes tipos de una manera peculiar. Convertirán el valor de su lado izquierdo a tipo Booleano para decidir qué hacer, pero dependiendo del operador y del resultado de esa conversión, devolverán ya sea el valor original del lado izquierdo o el valor del lado derecho.</p> 
+        <p>El operador ?? se parece a ||, pero devuelve el valor del lado derecho solo si el del lado izquierdo es nulo o indefinido, no si es algún otro valor que pueda convertirse en falso. A menudo, esto es preferible al comportamiento de ||.</p>
+
+        <h3 id="Funciones">Funciones</h3>
+        <p>Las funciones son una de las herramientas más centrales en la programación de JavaScript. El concepto de envolver una pieza de programa en un valor tiene muchos usos. Nos proporciona una manera de estructurar programas más grandes, reducir la repetición, asociar nombres con subprogramas y aislar estos subprogramas entre sí</p>
+
+        <h3 id="Conclusiones">Conclusiones</h3>
+        <p>En resumen, el dominio de las variables, los operadores lógicos y las funciones es fundamental. Las variables permiten almacenar y manipular datos, los operadores lógicos facilitan la toma de decisiones en el código, y las funciones nos ayudan a estructurar programas de manera eficiente, facilitando la reutilización del código. Entender y aplicar correctamente estos conceptos es clave.</p>
+    </div>
+    
+</body>
+
+</html>
